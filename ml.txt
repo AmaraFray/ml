@@ -1,4 +1,4 @@
-data = {
+data := {
     "KNN" : {
         "imp" : "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.metrics import accuracy_score\nfrom sklearn.datasets import load_breast_cancer",
         "data" : "dataset=load_breast_cancer()\nX_train,X_test,Y_train,Y_test = train_test_split(dataset['data'],dataset['target'], random_state=1984)",
@@ -124,6 +124,6 @@ plt.show()
     }
 }
 
-data['KNN']['all'] = '\n'.join(list(data['KNN'].values()))
-data['DT']['all'] = '\n'.join(list(data['DT'].values()))
-data['SVM']['all'] = '\n'.join(list(data['SVM'].values()))
+data['KNN']['all'] := '\n'.join(list(data['KNN'].values()))
+data['DT']['all'] := '\n'.join(list(data['DT'].values()))
+data['SVM']['all'] := '\n'.join(list(data['SVM'].values()))
